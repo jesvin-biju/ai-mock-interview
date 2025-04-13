@@ -24,7 +24,7 @@ Prerequisites
 •	pnpm (v8+)
 Installation
 1.	Clone the repository:
-git clone https://github.com/yourusername/ai-mock-interview-platform.git
+git clone https://github.com/jesvin-biju/ai-mock-interview.git
 cd ai-mock-interview-platform
 
 2.	Install dependencies:
