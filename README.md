@@ -1,54 +1,76 @@
-# React + TypeScript + Vite
+AI Mock Interview Platform
+An interactive platform designed to simulate mock interviews using advanced AI technologies. Built with React, Vite, Gemini AI, Firebase, and Shadcn UI for seamless user experience and scalability.
+ 
+Features
+•	AI-Powered Mock Interviews: Conduct realistic interview simulations using Gemini AI.
+•	Customizable Interview Scenarios: Tailor interview questions based on user preferences and job roles.
+•	Real-Time Feedback: Get instant feedback on responses to improve performance.
+•	Secure Authentication: Firebase authentication ensures secure access to user accounts.
+•	Dynamic UI Components: Beautiful and accessible UI built with Shadcn components.
+•	Fast Performance: Optimized with Vite for lightning-fast development and production builds.
+ 
+Tech Stack
+Technology	Purpose
+React	Frontend framework for building UI
+Vite	Development tool for fast builds
+Gemini AI	AI engine for generating interview questions
+Firebase	Backend services for authentication and database
+Shadcn UI	Customizable and accessible UI components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ 
+Getting Started
+Prerequisites
+•	Node.js (v16+)
+•	pnpm (v8+)
+Installation
+1.	Clone the repository:
+git clone https://github.com/yourusername/ai-mock-interview-platform.git
+cd ai-mock-interview-platform
 
-Currently, two official plugins are available:
+2.	Install dependencies:
+pnpm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3.	Set up Firebase:
+o	Create a Firebase project.
+o	Add your Firebase configuration details in .env.
+4.	Start the development server:
+pnpm dev
 
-## Expanding the ESLint configuration
+ 
+Usage
+1.	Sign up or log in using Firebase authentication.
+2.	Select an interview type (e.g., technical, behavioral).
+3.	Answer AI-generated questions in real-time.
+4.	Review feedback and performance metrics.
+ 
+Project Structure
+├── src/
+│   ├── components/       # Reusable UI components (Shadcn)
+│   ├── pages/            # Application pages
+│   ├── services/         # Firebase and Gemini integrations
+│   ├── assets/           # Static files (images, styles)
+│   └── App.jsx           # Main application entry point
+├── .env                  # Environment variables for Firebase config
+├── vite.config.js        # Vite configuration file
+└── README.md             # Project documentation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+ 
+Contributing
+We welcome contributions! Please follow these steps:
+1.	Fork the repository.
+2.	Create a feature branch (git checkout -b feature-name).
+3.	Commit your changes (git commit -m "Add feature").
+4.	Push to your branch (git push origin feature-name).
+5.	Submit a pull request.
+ 
+License
+This project is licensed under the MIT License.
+ 
+Acknowledgments
+Special thanks to:
+•	Gemini AI for powering our interview simulations.
+•	Firebase for backend support.
+•	Shadcn UI for accessible and customizable components.
+ 
+Feel free to customize this README further based on specific requirements or additional features of your project!
+⁂
